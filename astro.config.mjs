@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
@@ -19,9 +20,14 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Getting-Started',
+					autogenerate: { directory: 'getting-started' },
+				},
+				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
-				},
+				},	
+				
 			],
 		}),
 	],
